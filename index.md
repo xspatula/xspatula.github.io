@@ -12,12 +12,12 @@ header:
 feature_row:
   - title: "Framework"
     excerpt: "JSON-driven process definitions called from Jupyter notebooks. No code changes needed to reconfigure workflows — edit a JSON file and re-run."
-    url: "https://xspatula.github.io/setup_core_db_docs/framework/introduction/"
+    url: "https://xspatula.github.io/setup_core_db_docs/framework/"
     btn_label: "Read more"
     btn_class: "btn--primary"
   - title: "Database setup"
-    excerpt: "Step-by-step guide to installing PostgreSQL, creating an Anaconda environment, and defining schemas and tables using Xspatula."
-    url: "https://xspatula.github.io/setup_core_db_docs/setup_db/introduction/"
+    excerpt: "Step-by-step guide to installing PostgreSQL, creating an Anaconda environment, and defining schemas and tables using Xspatula from a Jupyter notebook."
+    url: "https://xspatula.github.io/setup_core_db_docs/setup_db/"
     btn_label: "Read more"
     btn_class: "btn--primary"
   - title: "Open source"
@@ -45,8 +45,8 @@ The framework uses **PostgreSQL** as its backbone. Every result, parameter set, 
 
 The full documentation is at **[xspatula.github.io/setup_core_db_docs](https://xspatula.github.io/setup_core_db_docs)** and covers:
 
-- [Framework architecture](https://xspatula.github.io/setup_core_db_docs/framework/introduction/) — scheme files, job files, pilot files, process files, notebook interface
-- [Database setup](https://xspatula.github.io/setup_core_db_docs/setup_db/introduction/) — PostgreSQL, Anaconda, `.netrc` credentials, schemas and tables
+- [Framework architecture](https://xspatula.github.io/setup_core_db_docs/framework/) — scheme files, job files, pilot files, process files, notebook interface
+- [Database setup](https://xspatula.github.io/setup_core_db_docs/setup_db/) — PostgreSQL, Anaconda, `.netrc` credentials, schemas and tables
 
 ## Licenses
 
