@@ -9,7 +9,7 @@ author_profile: true
 
 The core Xspatula framework. Defines the JSON-driven process execution engine, PostgreSQL database integration, and the Jupyter notebook interface.
 
-- **Documentation**: [xspatula.github.io/setup_core_db_docs](https://xspatula.github.io/setup_core_db_docs/docs)
+- **Documentation**: [xspatula.github.io/setup_core_db_docs](https://xspatula.github.io/setup_core_db_docs)
 - **Source**: [github.com/xspatula/setup_core_db](https://github.com/xspatula/setup_core_db)
 
 ### What it covers
@@ -26,7 +26,7 @@ The core Xspatula framework. Defines the JSON-driven process execution engine, P
 
 The documentation site for `setup_core_db`. Written in Markdown with the Jekyll Minimal Mistakes theme.
 
-- **Site**: [xspatula.github.io/setup_core_db_docs](https://xspatula.github.io/setup_core_db_docs/docs)
+- **Site**: [xspatula.github.io/setup_core_db_docs](https://xspatula.github.io/setup_core_db_docs)
 - **Source**: [github.com/xspatula/setup_core_db_docs](https://github.com/xspatula/setup_core_db_docs)
 
 ---
