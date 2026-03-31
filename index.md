@@ -20,6 +20,11 @@ feature_row:
     url: "https://xspatula.github.io/setup_core_db_docs/setup_db/"
     btn_label: "Read more"
     btn_class: "btn--primary"
+  - title: "AI4SoilHealth database"
+    excerpt: "Step-by-step guide to seeding the EU-funded AI4SoilHealth (AI4SH) PostgreSQL database — 9 schemas covering soil observations, eDNA, landscape, and more — using the Xspatula framework."
+    url: "https://xspatula.github.io/seed_ai4sh_db_docs"
+    btn_label: "Read more"
+    btn_class: "btn--primary"
   - title: "Open source"
     excerpt: "Code under MIT License, data under CC-BY. Clone the framework from GitHub and adapt it to your own domain."
     url: "https://github.com/xspatula/setup_core_db"
@@ -47,6 +52,13 @@ The full documentation is at **[xspatula.github.io/setup_core_db_docs](https://x
 
 - [Framework architecture](https://xspatula.github.io/setup_core_db_docs/framework/) — scheme files, job files, pilot files, process files, notebook interface
 - [Database setup](https://xspatula.github.io/setup_core_db_docs/setup_db/) — PostgreSQL, Anaconda, `.netrc` credentials, schemas and tables
+
+### AI4SoilHealth case study
+
+**[xspatula.github.io/seed_ai4sh_db_docs](https://xspatula.github.io/seed_ai4sh_db_docs)** documents seeding the EU Horizon-funded AI4SoilHealth database using the Xspatula framework:
+
+- [Setup DB](https://xspatula.github.io/seed_ai4sh_db_docs/setup_db/) — defines 9 schemas and all tables (utility, community, process, landscape, observation, eDNA and their utility schemas)
+- [Setup processes](https://xspatula.github.io/seed_ai4sh_db_docs/setup_processes/) — registers all framework processes in the database
 
 ## Licenses
 
