@@ -22,15 +22,6 @@ The core Xspatula framework. Defines the JSON-driven process execution engine, P
 
 ---
 
-## setup_core_db_docs
-
-The documentation site for `setup_core_db`. Written in Markdown with the Jekyll Minimal Mistakes theme.
-
-- **Site**: [xspatula.github.io/setup_core_db_docs](https://xspatula.github.io/setup_core_db_docs)
-- **Source**: [github.com/xspatula/setup_core_db_docs](https://github.com/xspatula/setup_core_db_docs)
-
----
-
 ## Related work
 
 Xspatula is developed alongside [Xspectre](https://xspectre.com), a pocket-sized spectral laboratory for in-field soil analysis. The database framework is designed to store and process spectral measurements and integrate them with Earth Observation data.
