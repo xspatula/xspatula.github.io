@@ -20,6 +20,31 @@ The core Xspatula framework. Defines the JSON-driven process execution engine, P
 - **Process files** — atomic definitions of what a process does and what database tables it touches
 - **Database security** — six user categories (`user_cat_0` through `user_cat_5`) with graduated PostgreSQL privileges
 
+### Setup processes
+
+Register the translate-and-manage process catalogue in the database. This is the prerequisite step for the user-data workflow: before any user data can be imported, the framework needs the relevant process definitions present in the database.
+
+- **Documentation**: [setup_core_db_docs/setup_processes](https://xspatula.github.io/setup_core_db_docs/setup_processes/)
+
+Covers:
+
+- **Translate processes** — process definitions that convert tabular (Excel) rows into JSON process and pilot files
+- **Manage processes** — process definitions that insert JSON-converted data into the database
+- **Process registration order** — which root processes and process IDs must be present before user-data import can run
+
+### User data
+
+Step-by-step guide for adding your own tabular (Excel) data to the database using the registered translate-and-manage processes from the previous step.
+
+- **Documentation**: [setup_core_db_docs/user_data](https://xspatula.github.io/setup_core_db_docs/user_data/)
+
+Covers:
+
+- **Excel file layout** — column conventions required for the translate step to parse correctly
+- **Translate** — converting Excel rows to JSON process files and pilot files
+- **Manage** — inserting the converted data into the database via the registered process catalogue
+- **Verification** — querying the database to confirm the imported records
+
 ---
 
 ## seed_ai4sh_db

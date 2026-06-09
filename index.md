@@ -20,6 +20,16 @@ feature_row:
     url: "https://xspatula.github.io/setup_core_db_docs/setup_db/"
     btn_label: "Read more"
     btn_class: "btn--primary"
+  - title: "Setup processes"
+    excerpt: "Register the translate-and-manage process catalogue in the database — these process definitions are the prerequisite for the user-data import workflow."
+    url: "https://xspatula.github.io/setup_core_db_docs/setup_processes/"
+    btn_label: "Read more"
+    btn_class: "btn--primary"
+  - title: "User data"
+    excerpt: "Add your own tabular (Excel) data to the database: the translate step converts rows to JSON process files; the manage step inserts them using the registered processes."
+    url: "https://xspatula.github.io/setup_core_db_docs/user_data/"
+    btn_label: "Read more"
+    btn_class: "btn--primary"
   - title: "AI4SoilHealth database"
     excerpt: "Step-by-step guide to seeding the EU-funded AI4SoilHealth (AI4SH) PostgreSQL database — 9 schemas covering soil observations, eDNA, landscape, and more — using the Xspatula framework."
     url: "https://xspatula.github.io/seed_ai4sh_db_docs/setup_db/"
@@ -62,6 +72,8 @@ The full documentation is at **[xspatula.github.io/setup_core_db_docs](https://x
 
 - [Framework architecture](https://xspatula.github.io/setup_core_db_docs/framework/) — scheme files, job files, pilot files, process files, notebook interface
 - [Database setup](https://xspatula.github.io/setup_core_db_docs/setup_db/) — PostgreSQL, Anaconda, `.netrc` credentials, schemas and tables
+- [Setup processes](https://xspatula.github.io/setup_core_db_docs/setup_processes/) — register the translate-and-manage process catalogue; prerequisite for the user-data workflow
+- [User data](https://xspatula.github.io/setup_core_db_docs/user_data/) — translate Excel rows to JSON process files, then manage them into the database
 
 ### AI4SoilHealth case study
 

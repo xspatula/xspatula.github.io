@@ -94,9 +94,9 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-          <a class="site-logo" href="/"><img src="/assets/media/xspectre_logo-trans_480.png" alt="Xspatula"></a>
+          <a class="site-logo" href="https://xspectre.com" target="_blank" rel="noopener noreferrer"><img src="/assets/media/xspectre_logo-trans_480.png" alt="Xspatula"></a>
         
-        <a class="site-title" href="/">
+        <a class="site-title" href="https://xspatula.github.io">
           Xspatula
           <span class="site-subtitle">Database-integrated Python modelling</span>
         </a>
@@ -305,15 +305,100 @@
   <li><strong>Database security</strong> — six user categories (<code class="language-plaintext highlighter-rouge">user_cat_0</code> through <code class="language-plaintext highlighter-rouge">user_cat_5</code>) with graduated PostgreSQL privileges</li>
 </ul>
 
-<hr />
+<h3 id="setup-processes">Setup processes</h3>
 
-<h2 id="setup_core_db_docs">setup_core_db_docs</h2>
-
-<p>The documentation site for <code class="language-plaintext highlighter-rouge">setup_core_db</code>. Written in Markdown with the Jekyll Minimal Mistakes theme.</p>
+<p>Register the translate-and-manage process catalogue in the database. This is the prerequisite step for the user-data workflow: before any user data can be imported, the framework needs the relevant process definitions present in the database.</p>
 
 <ul>
-  <li><strong>Site</strong>: <a href="https://xspatula.github.io/setup_core_db_docs">xspatula.github.io/setup_core_db_docs</a></li>
-  <li><strong>Source</strong>: <a href="https://github.com/xspatula/setup_core_db_docs">github.com/xspatula/setup_core_db_docs</a></li>
+  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/setup_core_db_docs/setup_processes/">setup_core_db_docs/setup_processes</a></li>
+</ul>
+
+<p>Covers:</p>
+
+<ul>
+  <li><strong>Translate processes</strong> — process definitions that convert tabular (Excel) rows into JSON process and pilot files</li>
+  <li><strong>Manage processes</strong> — process definitions that insert JSON-converted data into the database</li>
+  <li><strong>Process registration order</strong> — which root processes and process IDs must be present before user-data import can run</li>
+</ul>
+
+<h3 id="user-data">User data</h3>
+
+<p>Step-by-step guide for adding your own tabular (Excel) data to the database using the registered translate-and-manage processes from the previous step.</p>
+
+<ul>
+  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/setup_core_db_docs/user_data/">setup_core_db_docs/user_data</a></li>
+</ul>
+
+<p>Covers:</p>
+
+<ul>
+  <li><strong>Excel file layout</strong> — column conventions required for the translate step to parse correctly</li>
+  <li><strong>Translate</strong> — converting Excel rows to JSON process files and pilot files</li>
+  <li><strong>Manage</strong> — inserting the converted data into the database via the registered process catalogue</li>
+  <li><strong>Verification</strong> — querying the database to confirm the imported records</li>
+</ul>
+
+<hr />
+
+<h2 id="seed_ai4sh_db">seed_ai4sh_db</h2>
+
+<p>The AI4SoilHealth database project. Uses the <code class="language-plaintext highlighter-rouge">setup_core_db</code> framework to define, populate, and import data into a comprehensive soil observation database built for the EU Horizon-funded <a href="https://ai4soilhealth.eu">AI4SoilHealth</a> project.</p>
+
+<ul>
+  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/seed_ai4sh_db_docs">xspatula.github.io/seed_ai4sh_db_docs</a></li>
+  <li><strong>Source</strong>: <a href="https://github.com/xspatula/seed_ai4sh_db">github.com/xspatula/seed_ai4sh_db</a></li>
+</ul>
+
+<h3 id="setup-ai4sh-db">Setup AI4SH DB</h3>
+
+<p>Defines and creates the full AI4SH PostgreSQL database structure across 9 schemas.</p>
+
+<ul>
+  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/seed_ai4sh_db_docs/setup_db/">seed_ai4sh_db_docs/setup_db</a></li>
+</ul>
+
+<p>Covers:</p>
+
+<ul>
+  <li><strong>Schemas</strong> — 9 schemas: utility, community, process, observation_utility, observation, landscape, eDNA, and their utility sub-schemas</li>
+  <li><strong>Tables</strong> — all reference catalogues, entity tables, and observation tables with foreign key dependencies</li>
+  <li><strong>Execution order</strong> — the pilot file ordering required to satisfy foreign key constraints at creation time</li>
+</ul>
+
+<h3 id="setup-ai4sh-processes">Setup AI4SH Processes</h3>
+
+<p>Registers the full AI4SH process catalogue in the database so the framework can dispatch calls by <code class="language-plaintext highlighter-rouge">root_process_id</code> and <code class="language-plaintext highlighter-rouge">process_id</code>.</p>
+
+<ul>
+  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/seed_ai4sh_db_docs/setup_process/">seed_ai4sh_db_docs/setup_process</a></li>
+</ul>
+
+<p>Covers:</p>
+
+<ul>
+  <li><strong>Root processes</strong> — <code class="language-plaintext highlighter-rouge">manage_table_data</code> and <code class="language-plaintext highlighter-rouge">translate_data</code> process families</li>
+  <li><strong>Translate</strong> — processes for converting tabular data to JSON process files</li>
+  <li><strong>Community, utility, observation utility, observation, eDNA</strong> — domain-specific process registrations</li>
+</ul>
+
+<h3 id="import-ai4sh-data">Import AI4SH Data</h3>
+
+<p>Step-by-step guide to importing actual soil observation data into a running AI4SH database using the two-step translate-then-manage pattern.</p>
+
+<ul>
+  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/seed_ai4sh_db_docs/import_data/">seed_ai4sh_db_docs/import_data</a></li>
+</ul>
+
+<p>Covers:</p>
+
+<ul>
+  <li><strong>Tabular source data</strong> — Excel file layout and column conventions for all catalogue and observation tables</li>
+  <li><strong>JSON data structure</strong> — how the translate step converts Excel rows to JSON process files and pilot files</li>
+  <li><strong>Import utility data</strong> — translating the full set of observation utility catalogues (quantities, units, methods, providers, provisions, and more)</li>
+  <li><strong>Manage utility data</strong> — inserting utility catalogues into the database</li>
+  <li><strong>Import observation data</strong> — translating dataset metadata: data sources, persons, datasets, campaigns, and sampling logs</li>
+  <li><strong>Manage observation data</strong> — inserting dataset metadata into the database</li>
+  <li><strong>Foreign key handling</strong> — dependency trees, correct insertion order, and error recovery</li>
 </ul>
 
 <hr />
