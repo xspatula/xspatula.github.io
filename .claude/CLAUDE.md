@@ -13,8 +13,9 @@ The basic framework is available:
 - On GitHub at https://github.com/xspatula/setup_core_db
 
 A fully developed framework is available:
-- As a sibling directory at relative path `../load_ai4sh_db`
-- On GitHub at https://github.com/xspatula/load_ai4sh_db
+- As a sibling directory at relative path `../xspatula_ai4sh`
+- On GitHub at https://github.com/xspatula/xspatula_ai4sh
+
 
 ## Site Architecture
 
@@ -58,9 +59,9 @@ The documentation covers:
 | `Database setup` | https://xspatula.github.io/setup_core_db_docs/setup_db/ | Step-by-step database setup guide | no action required |
 | `setup_processes` | https://xspatula.github.io/setup_core_db_docs/setup_processes/ | Step-by-step guide for setting up a process example (the example covers the processes for translating and adding tabular data to the database - used in the next row)| create project summary in landing page and under project |
 | `user_data` | https://xspatula.github.io/setup_core_db_docs/user_data/ | Step-by-step guide for adding user specific tabular (excel) data via JSON conversion | create project summary in landing page and under project |
-| `AI4SoilHealth database` | https://xspatula.github.io/seed_ai4sh_db_docs/setup_db/ | Step-by-step guide for setting up the a soil analysis and modelling database (AI4SoilHealth)| no action required |
-| `AI4SoilHealth processes` | https://xspatula.github.io/seed_ai4sh_db_docs/setup_process/ | Step-by-step guide for setting up the a soil analysis and modelling processes (AI4SoilHealth)| no action required |
-| `AI4SoilHealth data import` | https://xspatula.github.io/seed_ai4sh_db_docs/import_data/ | Step-by-step guide for importing data to the soil analysis and modelling framework (AI4SoilHealth)| no action required |
+| `AI4SoilHealth database` | https://xspatula.github.io/xspatula_ai4sh_docs/setup_db/ | Step-by-step guide for setting up the a soil analysis and modelling database (AI4SoilHealth)| no action required |
+| `AI4SoilHealth processes` | https://xspatula.github.io/xspatula_ai4sh_docs/setup_process/ | Step-by-step guide for setting up the a soil analysis and modelling processes (AI4SoilHealth)| no action required |
+| `AI4SoilHealth data import` | https://xspatula.github.io/xspatula_ai4sh_docs/import_data/ | Step-by-step guide for importing data to the soil analysis and modelling framework (AI4SoilHealth)| no action required |
 | `Open Source` | https://github.com/xspatula/setup_core_db | Link to GitHub repo | no action required |
 
 ## Licenses
@@ -73,5 +74,5 @@ The documentation covers:
 | Repo | Relationship |
 |---|---|
 | `xspatula/setup_core_db_docs` | Generic framework documentation and step-by-step setup and seeding of basic data |
-| `xspatula/seed_ai4sh_db_docs/` | Setting up and seeding a project database and model environment for the project AI4Soilhealth |
+| `xspatula/xspatula_ai4sh_docs/` | Setting up database, seeding it, adding data and building a model environment for the project AI4Soilhealth |
 | `mmistakes/minimal-mistakes` | Jekyll theme used for the site |

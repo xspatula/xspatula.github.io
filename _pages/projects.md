@@ -47,18 +47,18 @@ Covers:
 
 ---
 
-## seed_ai4sh_db
+## xspatula_ai4sh
 
 The AI4SoilHealth database project. Uses the `setup_core_db` framework to define, populate, and import data into a comprehensive soil observation database built for the EU Horizon-funded [AI4SoilHealth](https://ai4soilhealth.eu) project.
 
-- **Documentation**: [xspatula.github.io/seed_ai4sh_db_docs](https://xspatula.github.io/seed_ai4sh_db_docs)
-- **Source**: [github.com/xspatula/seed_ai4sh_db](https://github.com/xspatula/seed_ai4sh_db)
+- **Documentation**: [xspatula.github.io/xspatula_ai4sh_docs](https://xspatula.github.io/xspatula_ai4sh_docs)
+- **Source**: [github.com/xspatula/xspatula_ai4sh](https://github.com/xspatula/xspatula_ai4sh)
 
 ### Setup AI4SH DB
 
 Defines and creates the full AI4SH PostgreSQL database structure across 9 schemas.
 
-- **Documentation**: [seed_ai4sh_db_docs/setup_db](https://xspatula.github.io/seed_ai4sh_db_docs/setup_db/)
+- **Documentation**: [xspatula_ai4sh_docs/setup_db](https://xspatula.github.io/xspatula_ai4sh_docs/setup_db/)
 
 Covers:
 
@@ -70,7 +70,7 @@ Covers:
 
 Registers the full AI4SH process catalogue in the database so the framework can dispatch calls by `root_process_id` and `process_id`.
 
-- **Documentation**: [seed_ai4sh_db_docs/setup_process](https://xspatula.github.io/seed_ai4sh_db_docs/setup_process/)
+- **Documentation**: [xspatula_ai4sh_docs/setup_process](https://xspatula.github.io/xspatula_ai4sh_docs/setup_process/)
 
 Covers:
 
@@ -82,7 +82,7 @@ Covers:
 
 Step-by-step guide to importing actual soil observation data into a running AI4SH database using the two-step translate-then-manage pattern.
 
-- **Documentation**: [seed_ai4sh_db_docs/import_data](https://xspatula.github.io/seed_ai4sh_db_docs/import_data/)
+- **Documentation**: [xspatula_ai4sh_docs/import_data](https://xspatula.github.io/xspatula_ai4sh_docs/import_data/)
 
 Covers:
 

@@ -32,17 +32,17 @@ feature_row:
     btn_class: "btn--primary"
   - title: "AI4SoilHealth database"
     excerpt: "Step-by-step guide to seeding the EU-funded AI4SoilHealth (AI4SH) PostgreSQL database — 9 schemas covering soil observations, eDNA, landscape, and more — using the Xspatula framework."
-    url: "https://xspatula.github.io/seed_ai4sh_db_docs/setup_db/"
+    url: "https://xspatula.github.io/xspatula_ai4sh_docs/setup_db/"
     btn_label: "Read more"
     btn_class: "btn--primary"
   - title: "AI4SoilHealth processes"
     excerpt: "Register the AI4SH process catalogue in the database — root processes, translate, community, utility, observation utility, observation, and eDNA process families."
-    url: "https://xspatula.github.io/seed_ai4sh_db_docs/setup_process/"
+    url: "https://xspatula.github.io/xspatula_ai4sh_docs/setup_process/"
     btn_label: "Read more"
     btn_class: "btn--primary"
   - title: "AI4SoilHealth data import"
     excerpt: "Two-step translate-then-manage workflow for importing soil observation data: utility catalogues, dataset metadata, campaigns, sampling logs, and measurements."
-    url: "https://xspatula.github.io/seed_ai4sh_db_docs/import_data/"
+    url: "https://xspatula.github.io/xspatula_ai4sh_docs/import_data/"
     btn_label: "Read more"
     btn_class: "btn--primary"
   - title: "Open source"
@@ -77,11 +77,11 @@ The full documentation is at **[xspatula.github.io/setup_core_db_docs](https://x
 
 ### AI4SoilHealth case study
 
-**[xspatula.github.io/seed_ai4sh_db_docs](https://xspatula.github.io/seed_ai4sh_db_docs)** documents seeding the EU Horizon-funded AI4SoilHealth database using the Xspatula framework:
+**[xspatula.github.io/xspatula_ai4sh_docs](https://xspatula.github.io/xspatula_ai4sh_docs)** documents seeding the EU Horizon-funded AI4SoilHealth database using the Xspatula framework:
 
-- [Setup DB](https://xspatula.github.io/seed_ai4sh_db_docs/setup_db/) — defines 9 schemas and all tables (utility, community, process, landscape, observation, eDNA and their utility schemas)
-- [Setup processes](https://xspatula.github.io/seed_ai4sh_db_docs/setup_process/) — registers all framework processes in the database
-- [Import data](https://xspatula.github.io/seed_ai4sh_db_docs/import_data/) — translate-then-manage workflow for importing utility catalogues, dataset metadata, and soil observation records
+- [Setup DB](https://xspatula.github.io/xspatula_ai4sh_docs/setup_db/) — defines 9 schemas and all tables (utility, community, process, landscape, observation, eDNA and their utility schemas)
+- [Setup processes](https://xspatula.github.io/xspatula_ai4sh_docs/setup_process/) — registers all framework processes in the database
+- [Import data](https://xspatula.github.io/xspatula_ai4sh_docs/import_data/) — translate-then-manage workflow for importing utility catalogues, dataset metadata, and soil observation records
 
 ## Licenses
 
