@@ -5,12 +5,12 @@ permalink: /projects/
 author_profile: true
 ---
 
-## setup_core_db
+## xspatula_core
 
 The core Xspatula framework. Defines the JSON-driven process execution engine, PostgreSQL database integration, and the Jupyter notebook interface.
 
-- **Documentation**: [xspatula.github.io/setup_core_db_docs](https://xspatula.github.io/setup_core_db_docs)
-- **Source**: [github.com/xspatula/setup_core_db](https://github.com/xspatula/setup_core_db)
+- **Documentation**: [xspatula.github.io/xspatula_core_docs](https://xspatula.github.io/xspatula_core_docs)
+- **Source**: [github.com/xspatula/xspatula_core](https://github.com/xspatula/xspatula_core)
 
 ### What it covers
 
@@ -24,7 +24,7 @@ The core Xspatula framework. Defines the JSON-driven process execution engine, P
 
 Register the translate-and-manage process catalogue in the database. This is the prerequisite step for the user-data workflow: before any user data can be imported, the framework needs the relevant process definitions present in the database.
 
-- **Documentation**: [setup_core_db_docs/setup_processes](https://xspatula.github.io/setup_core_db_docs/setup_processes/)
+- **Documentation**: [xspatula_core_docs/setup_processes](https://xspatula.github.io/xspatula_core_docs/setup_processes/)
 
 Covers:
 
@@ -36,7 +36,7 @@ Covers:
 
 Step-by-step guide for adding your own tabular (Excel) data to the database using the registered translate-and-manage processes from the previous step.
 
-- **Documentation**: [setup_core_db_docs/user_data](https://xspatula.github.io/setup_core_db_docs/user_data/)
+- **Documentation**: [xspatula_core_docs/user_data](https://xspatula.github.io/xspatula_core_docs/user_data/)
 
 Covers:
 
@@ -47,42 +47,42 @@ Covers:
 
 ---
 
-## xspatula_ai4sh
+## xspatula_lucas
 
-The AI4SoilHealth database project. Uses the `setup_core_db` framework to define, populate, and import data into a comprehensive soil observation database built for the EU Horizon-funded [AI4SoilHealth](https://ai4soilhealth.eu) project.
+An open excerpt of the private `xspatula_ai4sh` project, containing only the publicly releasable LUCAS 2009 soil survey records. Uses the `xspatula_core` framework to define, populate, and import this data into a soil observation database built for the EU Horizon-funded [AI4SoilHealth](https://ai4soilhealth.eu) project.
 
-- **Documentation**: [xspatula.github.io/xspatula_ai4sh_docs](https://xspatula.github.io/xspatula_ai4sh_docs)
-- **Source**: [github.com/xspatula/xspatula_ai4sh](https://github.com/xspatula/xspatula_ai4sh)
+- **Documentation**: [xspatula.github.io/xspatula_lucas_docs](https://xspatula.github.io/xspatula_lucas_docs)
+- **Source**: [github.com/xspatula/xspatula_lucas](https://github.com/xspatula/xspatula_lucas)
 
-### Setup AI4SH DB
+### Setup LUCAS DB
 
-Defines and creates the full AI4SH PostgreSQL database structure across 9 schemas.
+Defines and creates the LUCAS PostgreSQL database structure.
 
-- **Documentation**: [xspatula_ai4sh_docs/setup_db](https://xspatula.github.io/xspatula_ai4sh_docs/setup_db/)
+- **Documentation**: [xspatula_lucas_docs/setup_db](https://xspatula.github.io/xspatula_lucas_docs/setup_db/)
 
 Covers:
 
-- **Schemas** — 9 schemas: utility, community, process, observation_utility, observation, landscape, eDNA, and their utility sub-schemas
+- **Schemas** — utility, community, process, observation_utility, observation, and landscape, and their utility sub-schemas
 - **Tables** — all reference catalogues, entity tables, and observation tables with foreign key dependencies
 - **Execution order** — the pilot file ordering required to satisfy foreign key constraints at creation time
 
-### Setup AI4SH Processes
+### Setup LUCAS Processes
 
-Registers the full AI4SH process catalogue in the database so the framework can dispatch calls by `root_process_id` and `process_id`.
+Registers the LUCAS process catalogue in the database so the framework can dispatch calls by `root_process_id` and `process_id`.
 
-- **Documentation**: [xspatula_ai4sh_docs/setup_process](https://xspatula.github.io/xspatula_ai4sh_docs/setup_process/)
+- **Documentation**: [xspatula_lucas_docs/setup_process](https://xspatula.github.io/xspatula_lucas_docs/setup_process/)
 
 Covers:
 
 - **Root processes** — `manage_table_data` and `translate_data` process families
 - **Translate** — processes for converting tabular data to JSON process files
-- **Community, utility, observation utility, observation, eDNA** — domain-specific process registrations
+- **Community, utility, observation utility, observation** — domain-specific process registrations
 
-### Import AI4SH Data
+### Import LUCAS Data
 
-Step-by-step guide to importing actual soil observation data into a running AI4SH database using the two-step translate-then-manage pattern.
+Step-by-step guide to importing the LUCAS 2009 soil observation data into a running database using the two-step translate-then-manage pattern.
 
-- **Documentation**: [xspatula_ai4sh_docs/import_data](https://xspatula.github.io/xspatula_ai4sh_docs/import_data/)
+- **Documentation**: [xspatula_lucas_docs/import_data](https://xspatula.github.io/xspatula_lucas_docs/import_data/)
 
 Covers:
 

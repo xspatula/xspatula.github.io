@@ -22,7 +22,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Xspatula">
 <meta property="og:title" content="Projects">
-<meta property="og:url" content="http://localhost:4000/projects/">
+<meta property="og:url" content="/projects/">
 
 
   <meta property="og:description" content="Open-source framework for scripting database-integrated Python workflows.">
@@ -38,7 +38,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/projects/">
+<link rel="canonical" href="/projects/">
 
 
 
@@ -147,7 +147,7 @@
 
   
     <div class="author__avatar">
-      <a href="http://localhost:4000/">
+      <a href="/">
         <img src="/assets/media/biophoto_tg_1.png" alt="Thomas Gumbricht" itemprop="image" class="u-photo">
       </a>
     </div>
@@ -155,7 +155,7 @@
 
   <div class="author__content">
     <h3 class="author__name p-name" itemprop="name">
-      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Thomas Gumbricht</a>
+      <a class="u-url" rel="me" href="/" itemprop="url">Thomas Gumbricht</a>
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
@@ -275,7 +275,7 @@
       
         <header>
           <h1 id="page-title" class="page__title" itemprop="headline">
-            <a href="http://localhost:4000/projects/" itemprop="url">Projects
+            <a href="/projects/" itemprop="url">Projects
 </a>
           </h1>
           
@@ -286,13 +286,13 @@
 
       <section class="page__content" itemprop="text">
         
-        <h2 id="setup_core_db">setup_core_db</h2>
+        <h2 id="xspatula_core">xspatula_core</h2>
 
 <p>The core Xspatula framework. Defines the JSON-driven process execution engine, PostgreSQL database integration, and the Jupyter notebook interface.</p>
 
 <ul>
-  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/setup_core_db_docs">xspatula.github.io/setup_core_db_docs</a></li>
-  <li><strong>Source</strong>: <a href="https://github.com/xspatula/setup_core_db">github.com/xspatula/setup_core_db</a></li>
+  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_core_docs">xspatula.github.io/xspatula_core_docs</a></li>
+  <li><strong>Source</strong>: <a href="https://github.com/xspatula/xspatula_core">github.com/xspatula/xspatula_core</a></li>
 </ul>
 
 <h3 id="what-it-covers">What it covers</h3>
@@ -310,7 +310,7 @@
 <p>Register the translate-and-manage process catalogue in the database. This is the prerequisite step for the user-data workflow: before any user data can be imported, the framework needs the relevant process definitions present in the database.</p>
 
 <ul>
-  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/setup_core_db_docs/setup_processes/">setup_core_db_docs/setup_processes</a></li>
+  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_core_docs/setup_processes/">xspatula_core_docs/setup_processes</a></li>
 </ul>
 
 <p>Covers:</p>
@@ -326,7 +326,7 @@
 <p>Step-by-step guide for adding your own tabular (Excel) data to the database using the registered translate-and-manage processes from the previous step.</p>
 
 <ul>
-  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/setup_core_db_docs/user_data/">setup_core_db_docs/user_data</a></li>
+  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_core_docs/user_data/">xspatula_core_docs/user_data</a></li>
 </ul>
 
 <p>Covers:</p>
@@ -340,37 +340,37 @@
 
 <hr />
 
-<h2 id="xspatula_ai4sh">xspatula_ai4sh</h2>
+<h2 id="xspatula_lucas">xspatula_lucas</h2>
 
-<p>The AI4SoilHealth database project. Uses the <code class="language-plaintext highlighter-rouge">setup_core_db</code> framework to define, populate, and import data into a comprehensive soil observation database built for the EU Horizon-funded <a href="https://ai4soilhealth.eu">AI4SoilHealth</a> project.</p>
+<p>An open excerpt of the private <code class="language-plaintext highlighter-rouge">xspatula_ai4sh</code> project, containing only the publicly releasable LUCAS 2009 soil survey records. Uses the <code class="language-plaintext highlighter-rouge">xspatula_core</code> framework to define, populate, and import this data into a soil observation database built for the EU Horizon-funded <a href="https://ai4soilhealth.eu">AI4SoilHealth</a> project.</p>
 
 <ul>
-  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_ai4sh_docs">xspatula.github.io/xspatula_ai4sh_docs</a></li>
-  <li><strong>Source</strong>: <a href="https://github.com/xspatula/xspatula_ai4sh">github.com/xspatula/xspatula_ai4sh</a></li>
+  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_lucas_docs">xspatula.github.io/xspatula_lucas_docs</a></li>
+  <li><strong>Source</strong>: <a href="https://github.com/xspatula/xspatula_lucas">github.com/xspatula/xspatula_lucas</a></li>
 </ul>
 
-<h3 id="setup-ai4sh-db">Setup AI4SH DB</h3>
+<h3 id="setup-lucas-db">Setup LUCAS DB</h3>
 
-<p>Defines and creates the full AI4SH PostgreSQL database structure across 9 schemas.</p>
+<p>Defines and creates the LUCAS PostgreSQL database structure.</p>
 
 <ul>
-  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_ai4sh_docs/setup_db/">xspatula_ai4sh_docs/setup_db</a></li>
+  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_lucas_docs/setup_db/">xspatula_lucas_docs/setup_db</a></li>
 </ul>
 
 <p>Covers:</p>
 
 <ul>
-  <li><strong>Schemas</strong> — 9 schemas: utility, community, process, observation_utility, observation, landscape, eDNA, and their utility sub-schemas</li>
+  <li><strong>Schemas</strong> — utility, community, process, observation_utility, observation, and landscape, and their utility sub-schemas</li>
   <li><strong>Tables</strong> — all reference catalogues, entity tables, and observation tables with foreign key dependencies</li>
   <li><strong>Execution order</strong> — the pilot file ordering required to satisfy foreign key constraints at creation time</li>
 </ul>
 
-<h3 id="setup-ai4sh-processes">Setup AI4SH Processes</h3>
+<h3 id="setup-lucas-processes">Setup LUCAS Processes</h3>
 
-<p>Registers the full AI4SH process catalogue in the database so the framework can dispatch calls by <code class="language-plaintext highlighter-rouge">root_process_id</code> and <code class="language-plaintext highlighter-rouge">process_id</code>.</p>
+<p>Registers the LUCAS process catalogue in the database so the framework can dispatch calls by <code class="language-plaintext highlighter-rouge">root_process_id</code> and <code class="language-plaintext highlighter-rouge">process_id</code>.</p>
 
 <ul>
-  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_ai4sh_docs/setup_process/">xspatula_ai4sh_docs/setup_process</a></li>
+  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_lucas_docs/setup_process/">xspatula_lucas_docs/setup_process</a></li>
 </ul>
 
 <p>Covers:</p>
@@ -378,15 +378,15 @@
 <ul>
   <li><strong>Root processes</strong> — <code class="language-plaintext highlighter-rouge">manage_table_data</code> and <code class="language-plaintext highlighter-rouge">translate_data</code> process families</li>
   <li><strong>Translate</strong> — processes for converting tabular data to JSON process files</li>
-  <li><strong>Community, utility, observation utility, observation, eDNA</strong> — domain-specific process registrations</li>
+  <li><strong>Community, utility, observation utility, observation</strong> — domain-specific process registrations</li>
 </ul>
 
-<h3 id="import-ai4sh-data">Import AI4SH Data</h3>
+<h3 id="import-lucas-data">Import LUCAS Data</h3>
 
-<p>Step-by-step guide to importing actual soil observation data into a running AI4SH database using the two-step translate-then-manage pattern.</p>
+<p>Step-by-step guide to importing the LUCAS 2009 soil observation data into a running database using the two-step translate-then-manage pattern.</p>
 
 <ul>
-  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_ai4sh_docs/import_data/">xspatula_ai4sh_docs/import_data</a></li>
+  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_lucas_docs/import_data/">xspatula_lucas_docs/import_data</a></li>
 </ul>
 
 <p>Covers:</p>
@@ -488,7 +488,7 @@
 </div>
 
 
-<div class="page__footer-copyright">&copy; 2013 - 2026 <a href="http://localhost:4000">Xspatula</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2013 - 2026 <a href="">Xspatula</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

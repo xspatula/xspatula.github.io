@@ -6,48 +6,48 @@ header:
   overlay_color: "#333"
   actions:
     - label: "Get started"
-      url: "https://xspatula.github.io/setup_core_db_docs"
+      url: "https://xspatula.github.io/xspatula_core_docs"
     - label: "GitHub"
       url: "https://github.com/xspatula"
 feature_row:
   - title: "Framework"
     excerpt: "JSON-driven process definitions called from Jupyter notebooks. No code changes needed to reconfigure workflows — edit a JSON file and re-run."
-    url: "https://xspatula.github.io/setup_core_db_docs/framework/"
+    url: "https://xspatula.github.io/xspatula_core_docs/framework/"
     btn_label: "Read more"
     btn_class: "btn--primary"
   - title: "Database setup"
     excerpt: "Step-by-step guide to installing PostgreSQL, creating an Anaconda environment, and defining schemas and tables using Xspatula from a Jupyter notebook."
-    url: "https://xspatula.github.io/setup_core_db_docs/setup_db/"
+    url: "https://xspatula.github.io/xspatula_core_docs/setup_db/"
     btn_label: "Read more"
     btn_class: "btn--primary"
   - title: "Setup processes"
     excerpt: "Register the translate-and-manage process catalogue in the database — these process definitions are the prerequisite for the user-data import workflow."
-    url: "https://xspatula.github.io/setup_core_db_docs/setup_processes/"
+    url: "https://xspatula.github.io/xspatula_core_docs/setup_processes/"
     btn_label: "Read more"
     btn_class: "btn--primary"
   - title: "User data"
     excerpt: "Add your own tabular (Excel) data to the database: the translate step converts rows to JSON process files; the manage step inserts them using the registered processes."
-    url: "https://xspatula.github.io/setup_core_db_docs/user_data/"
+    url: "https://xspatula.github.io/xspatula_core_docs/user_data/"
     btn_label: "Read more"
     btn_class: "btn--primary"
-  - title: "AI4SoilHealth database"
-    excerpt: "Step-by-step guide to seeding the EU-funded AI4SoilHealth (AI4SH) PostgreSQL database — 9 schemas covering soil observations, eDNA, landscape, and more — using the Xspatula framework."
-    url: "https://xspatula.github.io/xspatula_ai4sh_docs/setup_db/"
+  - title: "LUCAS soil database"
+    excerpt: "Step-by-step guide to seeding the LUCAS 2009 soil survey PostgreSQL database — an open excerpt of the AI4SoilHealth (AI4SH) database, covering the publicly releasable soil observation data — using the Xspatula framework."
+    url: "https://xspatula.github.io/xspatula_lucas_docs/setup_db/"
     btn_label: "Read more"
     btn_class: "btn--primary"
-  - title: "AI4SoilHealth processes"
-    excerpt: "Register the AI4SH process catalogue in the database — root processes, translate, community, utility, observation utility, observation, and eDNA process families."
-    url: "https://xspatula.github.io/xspatula_ai4sh_docs/setup_process/"
+  - title: "LUCAS processes"
+    excerpt: "Register the LUCAS process catalogue in the database — root processes, translate, community, utility, observation utility, and observation process families."
+    url: "https://xspatula.github.io/xspatula_lucas_docs/setup_process/"
     btn_label: "Read more"
     btn_class: "btn--primary"
-  - title: "AI4SoilHealth data import"
-    excerpt: "Two-step translate-then-manage workflow for importing soil observation data: utility catalogues, dataset metadata, campaigns, sampling logs, and measurements."
-    url: "https://xspatula.github.io/xspatula_ai4sh_docs/import_data/"
+  - title: "LUCAS data import"
+    excerpt: "Two-step translate-then-manage workflow for importing LUCAS 2009 soil survey data: utility catalogues, dataset metadata, campaigns, sampling logs, and measurements."
+    url: "https://xspatula.github.io/xspatula_lucas_docs/import_data/"
     btn_label: "Read more"
     btn_class: "btn--primary"
   - title: "Open source"
     excerpt: "Code under MIT License, data under CC-BY. Clone the framework from GitHub and adapt it to your own domain."
-    url: "https://github.com/xspatula/setup_core_db"
+    url: "https://github.com/xspatula/xspatula_core"
     btn_label: "View on GitHub"
     btn_class: "btn--inverse"
 ---
@@ -68,22 +68,22 @@ The framework uses **PostgreSQL** as its backbone. Every result, parameter set, 
 
 ## Documentation
 
-The full documentation is at **[xspatula.github.io/setup_core_db_docs](https://xspatula.github.io/setup_core_db_docs)** and covers:
+The full documentation is at **[xspatula.github.io/xspatula_core_docs](https://xspatula.github.io/xspatula_core_docs)** and covers:
 
-- [Framework architecture](https://xspatula.github.io/setup_core_db_docs/framework/) — scheme files, job files, pilot files, process files, notebook interface
-- [Database setup](https://xspatula.github.io/setup_core_db_docs/setup_db/) — PostgreSQL, Anaconda, `.netrc` credentials, schemas and tables
-- [Setup processes](https://xspatula.github.io/setup_core_db_docs/setup_processes/) — register the translate-and-manage process catalogue; prerequisite for the user-data workflow
-- [User data](https://xspatula.github.io/setup_core_db_docs/user_data/) — translate Excel rows to JSON process files, then manage them into the database
+- [Framework architecture](https://xspatula.github.io/xspatula_core_docs/framework/) — scheme files, job files, pilot files, process files, notebook interface
+- [Database setup](https://xspatula.github.io/xspatula_core_docs/setup_db/) — PostgreSQL, Anaconda, `.netrc` credentials, schemas and tables
+- [Setup processes](https://xspatula.github.io/xspatula_core_docs/setup_processes/) — register the translate-and-manage process catalogue; prerequisite for the user-data workflow
+- [User data](https://xspatula.github.io/xspatula_core_docs/user_data/) — translate Excel rows to JSON process files, then manage them into the database
 
-### AI4SoilHealth case study
+### LUCAS 2009 soil survey case study
 
-**[xspatula.github.io/xspatula_ai4sh_docs](https://xspatula.github.io/xspatula_ai4sh_docs)** documents seeding the EU Horizon-funded AI4SoilHealth database using the Xspatula framework:
+**[xspatula.github.io/xspatula_lucas_docs](https://xspatula.github.io/xspatula_lucas_docs)** documents seeding a soil database with the LUCAS 2009 survey data using the Xspatula framework. `xspatula_lucas` is an open excerpt of the private `xspatula_ai4sh` project — built for the EU Horizon-funded [AI4SoilHealth](https://ai4soilhealth.eu) project — containing only the publicly releasable LUCAS 2009 records:
 
-- [Setup DB](https://xspatula.github.io/xspatula_ai4sh_docs/setup_db/) — defines 9 schemas and all tables (utility, community, process, landscape, observation, eDNA and their utility schemas)
-- [Setup processes](https://xspatula.github.io/xspatula_ai4sh_docs/setup_process/) — registers all framework processes in the database
-- [Import data](https://xspatula.github.io/xspatula_ai4sh_docs/import_data/) — translate-then-manage workflow for importing utility catalogues, dataset metadata, and soil observation records
+- [Setup DB](https://xspatula.github.io/xspatula_lucas_docs/setup_db/) — defines the schemas and tables (utility, community, process, landscape, observation and their utility schemas)
+- [Setup processes](https://xspatula.github.io/xspatula_lucas_docs/setup_process/) — registers all framework processes in the database
+- [Import data](https://xspatula.github.io/xspatula_lucas_docs/import_data/) — translate-then-manage workflow for importing utility catalogues, dataset metadata, and LUCAS soil observation records
 
 ## Licenses
 
-- **Code**: [MIT License](https://github.com/xspatula/setup_core_db/blob/main/LICENSE)
+- **Code**: [MIT License](https://github.com/xspatula/xspatula_core/blob/main/LICENSE)
 - **Data**: [Creative Commons Attribution (CC-BY)](https://creativecommons.org/licenses/by/4.0/)

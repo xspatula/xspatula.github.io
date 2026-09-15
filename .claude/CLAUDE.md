@@ -9,12 +9,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 The Xspatula framework is written in Python and uses JSON files to define all executions and processes. These JSON files are called from Jupyter notebooks.
 
 The basic framework is available:
-- As a sibling directory at relative path `../setup_core_db`
-- On GitHub at https://github.com/xspatula/setup_core_db
+- As a sibling directory at relative path `../xspatula_core`
+- On GitHub at https://github.com/xspatula/xspatula_core
 
-A fully developed framework is available:
+A private fully developed framework is available:
 - As a sibling directory at relative path `../xspatula_ai4sh`
 - On GitHub at https://github.com/xspatula/xspatula_ai4sh
+
+An open excerpt of the fully developed framework is available:
+- As a sibling directory at relative path `../xspatula_lucas`
+- On GitHub at https://github.com/xspatula/xspatula_lucas
 
 
 ## Site Architecture
@@ -55,14 +59,14 @@ The documentation covers:
 
 | Project | target page | purpose | action |
 |---|---|---|---|
-| `Framework` | https://xspatula.github.io/setup_core_db_docs/framework/ | Framework introduction, app requirements and command file hierarchy | no action required |
-| `Database setup` | https://xspatula.github.io/setup_core_db_docs/setup_db/ | Step-by-step database setup guide | no action required |
-| `setup_processes` | https://xspatula.github.io/setup_core_db_docs/setup_processes/ | Step-by-step guide for setting up a process example (the example covers the processes for translating and adding tabular data to the database - used in the next row)| create project summary in landing page and under project |
-| `user_data` | https://xspatula.github.io/setup_core_db_docs/user_data/ | Step-by-step guide for adding user specific tabular (excel) data via JSON conversion | create project summary in landing page and under project |
-| `AI4SoilHealth database` | https://xspatula.github.io/xspatula_ai4sh_docs/setup_db/ | Step-by-step guide for setting up the a soil analysis and modelling database (AI4SoilHealth)| no action required |
-| `AI4SoilHealth processes` | https://xspatula.github.io/xspatula_ai4sh_docs/setup_process/ | Step-by-step guide for setting up the a soil analysis and modelling processes (AI4SoilHealth)| no action required |
-| `AI4SoilHealth data import` | https://xspatula.github.io/xspatula_ai4sh_docs/import_data/ | Step-by-step guide for importing data to the soil analysis and modelling framework (AI4SoilHealth)| no action required |
-| `Open Source` | https://github.com/xspatula/setup_core_db | Link to GitHub repo | no action required |
+| `Framework` | https://xspatula.github.io/xspatula_core_docs/framework/ | Framework introduction, app requirements and command file hierarchy | no action required |
+| `Database setup` | https://xspatula.github.io/xspatula_core_docs/setup_db/ | Step-by-step database setup guide | no action required |
+| `setup_processes` | https://xspatula.github.io/xspatula_core_docs/setup_processes/ | Step-by-step guide for setting up a process example (the example covers the processes for translating and adding tabular data to the database - used in the next row)| create project summary in landing page and under project |
+| `user_data` | https://xspatula.github.io/xspatula_core_docs/user_data/ | Step-by-step guide for adding user specific tabular (excel) data via JSON conversion | create project summary in landing page and under project |
+| `LUCAS database` | https://xspatula.github.io/xspatula_lucas_docs/setup_db/ | Step-by-step guide for setting up the LUCAS 2009 soil survey database (open excerpt of AI4SoilHealth)| no action required |
+| `LUCAS processes` | https://xspatula.github.io/xspatula_lucas_docs/setup_process/ | Step-by-step guide for setting up the LUCAS soil survey processes (open excerpt of AI4SoilHealth)| no action required |
+| `LUCAS data import` | https://xspatula.github.io/xspatula_lucas_docs/import_data/ | Step-by-step guide for importing LUCAS soil survey data (open excerpt of AI4SoilHealth)| no action required |
+| `Open Source` | https://github.com/xspatula/xspatula_core | Link to GitHub repo | no action required |
 
 ## Licenses
 
@@ -73,6 +77,6 @@ The documentation covers:
 
 | Repo | Relationship |
 |---|---|
-| `xspatula/setup_core_db_docs` | Generic framework documentation and step-by-step setup and seeding of basic data |
-| `xspatula/xspatula_ai4sh_docs/` | Setting up database, seeding it, adding data and building a model environment for the project AI4Soilhealth |
+| `xspatula/xspatula_core_docs` | Generic framework documentation and step-by-step setup and seeding of basic data |
+| `xspatula/xspatula_lucas_docs/` | Setting up database, seeding it, adding data and building a model environment for the open LUCAS 2009 soil survey excerpt of AI4SoilHealth |
 | `mmistakes/minimal-mistakes` | Jekyll theme used for the site |
