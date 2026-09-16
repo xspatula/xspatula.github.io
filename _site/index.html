@@ -230,7 +230,7 @@
 
           
             <div class="archive__item-excerpt">
-              <p>Step-by-step guide to installing PostgreSQL, creating an Anaconda environment, and defining schemas and tables using Xspatula from a Jupyter notebook.</p>
+              <p>Guide to installing PostgreSQL, creating a Python environment, and defining schemas and tables using Xspatula from a Jupyter notebook.</p>
 
             </div>
           
@@ -253,7 +253,7 @@
 
           
             <div class="archive__item-excerpt">
-              <p>Register the translate-and-manage process catalogue in the database — these process definitions are the prerequisite for the user-data import workflow.</p>
+              <p>Register the process catalogue in the database — these process definitions are the prerequisite for the user-data import workflow and all further functions.</p>
 
             </div>
           
@@ -276,7 +276,7 @@
 
           
             <div class="archive__item-excerpt">
-              <p>Add your own tabular (Excel) data to the database: the translate step converts rows to JSON process files; the manage step inserts them using the registered processes.</p>
+              <p>Add your own tabular (Excel) data to the database: Xspatula translates the tables to JSON and then inserts the data - each Excel layout requires a process.</p>
 
             </div>
           
@@ -294,18 +294,18 @@
 
         <div class="archive__item-body">
           
-            <h2 class="archive__item-title">LUCAS soil database</h2>
+            <h2 class="archive__item-title">Audit</h2>
           
 
           
             <div class="archive__item-excerpt">
-              <p>Step-by-step guide to seeding the LUCAS 2009 soil survey PostgreSQL database — an open excerpt of the AI4SoilHealth (AI4SH) database, covering the publicly releasable soil observation data — using the Xspatula framework.</p>
+              <p>Include a comprehensive audit system with your Xspatula database to keep track of when and by whom a record in the database was added, changed or removed.</p>
 
             </div>
           
 
           
-            <p><a href="https://xspatula.github.io/xspatula_lucas_docs/setup_db/" class="btn btn--primary">Read more</a></p>
+            <p><a href="https://xspatula.github.io/xspatula_core_docs/auditing/" class="btn btn--primary">Read more</a></p>
           
         </div>
       </div>
@@ -317,18 +317,18 @@
 
         <div class="archive__item-body">
           
-            <h2 class="archive__item-title">LUCAS processes</h2>
+            <h2 class="archive__item-title">Community</h2>
           
 
           
             <div class="archive__item-excerpt">
-              <p>Register the LUCAS process catalogue in the database — root processes, translate, community, utility, observation utility, and observation process families.</p>
+              <p>Add manually inspected organisations and users to your Xspatula project - user passwords are hash-crypted and automatically sent to new users by email.</p>
 
             </div>
           
 
           
-            <p><a href="https://xspatula.github.io/xspatula_lucas_docs/setup_process/" class="btn btn--primary">Read more</a></p>
+            <p><a href="https://xspatula.github.io/xspatula_core_docs/community/" class="btn btn--primary">Read more</a></p>
           
         </div>
       </div>
@@ -340,18 +340,41 @@
 
         <div class="archive__item-body">
           
-            <h2 class="archive__item-title">LUCAS data import</h2>
+            <h2 class="archive__item-title">Building</h2>
           
 
           
             <div class="archive__item-excerpt">
-              <p>Two-step translate-then-manage workflow for importing LUCAS 2009 soil survey data: utility catalogues, dataset metadata, campaigns, sampling logs, and measurements.</p>
+              <p>Guide to building your own Xspatula framework project - adjusting notebooks, setting up the database, adding users, auditing, adding your own processes.</p>
 
             </div>
           
 
           
-            <p><a href="https://xspatula.github.io/xspatula_lucas_docs/import_data/" class="btn btn--primary">Read more</a></p>
+            <p><a href="https://xspatula.github.io/xspatula_core_docs/building/" class="btn btn--primary">Read more</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Project: European soil</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Building a customized framework for seeding, exploring and modeling data from the LUCAS 2009 soil survey — an open source project to learn and test how Xspatula operates.</p>
+
+            </div>
+          
+
+          
+            <p><a href="https://xspatula.github.io/xspatula_lucas_docs/" class="btn btn--primary">Read more</a></p>
           
         </div>
       </div>
@@ -404,18 +427,32 @@
 <ul>
   <li><a href="https://xspatula.github.io/xspatula_core_docs/framework/">Framework architecture</a> — scheme files, job files, pilot files, process files, notebook interface</li>
   <li><a href="https://xspatula.github.io/xspatula_core_docs/setup_db/">Database setup</a> — PostgreSQL, Anaconda, <code class="language-plaintext highlighter-rouge">.netrc</code> credentials, schemas and tables</li>
-  <li><a href="https://xspatula.github.io/xspatula_core_docs/setup_processes/">Setup processes</a> — register the translate-and-manage process catalogue; prerequisite for the user-data workflow</li>
-  <li><a href="https://xspatula.github.io/xspatula_core_docs/user_data/">User data</a> — translate Excel rows to JSON process files, then manage them into the database</li>
+  <li><a href="https://xspatula.github.io/xspatula_core_docs/setup_processes/">Setup processes</a> — register the process catalogue; prerequisite for the user-data workflow</li>
+  <li><a href="https://xspatula.github.io/xspatula_core_docs/user_data/">User data</a> — translate Excel rows to database records</li>
+  <li><a href="https://xspatula.github.io/xspatula_core_docs/auditing/">Auditing</a> — keep track of changes in the database</li>
+  <li><a href="https://xspatula.github.io/xspatula_core_docs/community/">Community</a> — add users to your Xspatula project</li>
+  <li><a href="https://xspatula.github.io/xspatula_core_docs/building/">Building</a> — guide for building your own Xspatula project</li>
 </ul>
 
 <h3 id="lucas-2009-soil-survey-case-study">LUCAS 2009 soil survey case study</h3>
 
-<p><strong><a href="https://xspatula.github.io/xspatula_lucas_docs">xspatula.github.io/xspatula_lucas_docs</a></strong> documents seeding a soil database with the LUCAS 2009 survey data using the Xspatula framework. <code class="language-plaintext highlighter-rouge">xspatula_lucas</code> is an open excerpt of the private <code class="language-plaintext highlighter-rouge">xspatula_ai4sh</code> project — built for the EU Horizon-funded <a href="https://ai4soilhealth.eu">AI4SoilHealth</a> project — containing only the publicly releasable LUCAS 2009 records:</p>
+<p><strong><a href="https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/">xspatula.github.io/xspatula_lucas_docs/lucas_2009</a></strong> documents a full pipeline for seeding and modelling the LUCAS 2009 soil survey using the Xspatula framework. <code class="language-plaintext highlighter-rouge">xspatula_lucas</code> is an open excerpt of the private <code class="language-plaintext highlighter-rouge">xspatula_ai4sh</code> project — built for the EU Horizon-funded <a href="https://ai4soilhealth.eu">AI4SoilHealth</a> project — containing only the publicly releasable LUCAS 2009 records. The pipeline has two sections:</p>
+
+<p><strong>Section 1: Seeding</strong></p>
 
 <ul>
-  <li><a href="https://xspatula.github.io/xspatula_lucas_docs/setup_db/">Setup DB</a> — defines the schemas and tables (utility, community, process, landscape, observation and their utility schemas)</li>
-  <li><a href="https://xspatula.github.io/xspatula_lucas_docs/setup_process/">Setup processes</a> — registers all framework processes in the database</li>
-  <li><a href="https://xspatula.github.io/xspatula_lucas_docs/import_data/">Import data</a> — translate-then-manage workflow for importing utility catalogues, dataset metadata, and LUCAS soil observation records</li>
+  <li><a href="https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/prepare_data/">Prepare data</a> — download the LUCAS 2009 data and prepare it for import</li>
+  <li><a href="https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/insert_utility/">Insert utility data</a> — insert the utility catalogues into the database</li>
+  <li><a href="https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/insert_dataset_meta/">Insert dataset metadata</a> — insert the LUCAS dataset metadata</li>
+  <li><a href="https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/load_lucas_2009/">Load LUCAS 2009 data</a> — load the LUCAS soil observation records into the database</li>
+</ul>
+
+<p><strong>Section 2: Modelling</strong></p>
+
+<ul>
+  <li><a href="https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/machine_learning/explore_select_data/">Explore and select data</a> — explore the seeded data and select the subset to model</li>
+  <li><a href="https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/machine_learning/ml_preprocess/">Preprocess data</a> — prepare the selected data for machine learning</li>
+  <li><a href="https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/machine_learning/ml_model/">Model</a> — train and evaluate machine learning models on the LUCAS soil data</li>
 </ul>
 
 <h2 id="licenses">Licenses</h2>

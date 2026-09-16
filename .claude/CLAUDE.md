@@ -61,11 +61,12 @@ The documentation covers:
 |---|---|---|---|
 | `Framework` | https://xspatula.github.io/xspatula_core_docs/framework/ | Framework introduction, app requirements and command file hierarchy | no action required |
 | `Database setup` | https://xspatula.github.io/xspatula_core_docs/setup_db/ | Step-by-step database setup guide | no action required |
-| `setup_processes` | https://xspatula.github.io/xspatula_core_docs/setup_processes/ | Step-by-step guide for setting up a process example (the example covers the processes for translating and adding tabular data to the database - used in the next row)| create project summary in landing page and under project |
-| `user_data` | https://xspatula.github.io/xspatula_core_docs/user_data/ | Step-by-step guide for adding user specific tabular (excel) data via JSON conversion | create project summary in landing page and under project |
-| `LUCAS database` | https://xspatula.github.io/xspatula_lucas_docs/setup_db/ | Step-by-step guide for setting up the LUCAS 2009 soil survey database (open excerpt of AI4SoilHealth)| no action required |
-| `LUCAS processes` | https://xspatula.github.io/xspatula_lucas_docs/setup_process/ | Step-by-step guide for setting up the LUCAS soil survey processes (open excerpt of AI4SoilHealth)| no action required |
-| `LUCAS data import` | https://xspatula.github.io/xspatula_lucas_docs/import_data/ | Step-by-step guide for importing LUCAS soil survey data (open excerpt of AI4SoilHealth)| no action required |
+| `setup_processes` | https://xspatula.github.io/xspatula_core_docs/setup_processes/ | Step-by-step guide for setting up a process example (the example covers the processes for translating and adding tabular data to the database - used in the next row)| no action required |
+| `user_data` | https://xspatula.github.io/xspatula_core_docs/user_data/ | Step-by-step guide for adding user specific tabular (excel) data via JSON conversion | no action required |
+| `auditing` | https://xspatula.github.io/xspatula_core_docs/auditing/ | Guide for the audit system tracking who added, changed, or removed a database record and when | no action required |
+| `community` | https://xspatula.github.io/xspatula_core_docs/community/ | Guide for adding manually inspected organisations and users, with hash-crypted passwords emailed to new users | no action required |
+| `building` | https://xspatula.github.io/xspatula_core_docs/building/ | Guide for building your own Xspatula framework project end to end | no action required |
+| `xspatula_lucas / LUCAS 2009` | https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/ | Two-section pipeline for seeding and modelling the LUCAS 2009 soil survey (open excerpt of AI4SoilHealth) | no action required |
 | `Open Source` | https://github.com/xspatula/xspatula_core | Link to GitHub repo | no action required |
 
 ## Licenses

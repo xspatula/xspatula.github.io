@@ -302,12 +302,12 @@
   <li><strong>Job files</strong> — ordered list of processes to run in a session</li>
   <li><strong>Pilot files</strong> — parameter sets that drive individual processes</li>
   <li><strong>Process files</strong> — atomic definitions of what a process does and what database tables it touches</li>
-  <li><strong>Database security</strong> — six user categories (<code class="language-plaintext highlighter-rouge">user_cat_0</code> through <code class="language-plaintext highlighter-rouge">user_cat_5</code>) with graduated PostgreSQL privileges</li>
+  <li><strong>Database security</strong> — five user categories (<code class="language-plaintext highlighter-rouge">user_cat_1</code> through <code class="language-plaintext highlighter-rouge">user_cat_5</code>) with graduated PostgreSQL privileges</li>
 </ul>
 
 <h3 id="setup-processes">Setup processes</h3>
 
-<p>Register the translate-and-manage process catalogue in the database. This is the prerequisite step for the user-data workflow: before any user data can be imported, the framework needs the relevant process definitions present in the database.</p>
+<p>Register the process catalogue in the database. This is the prerequisite step for the user-data workflow: before any user data can be imported, the framework needs the relevant process definitions present in the database.</p>
 
 <ul>
   <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_core_docs/setup_processes/">xspatula_core_docs/setup_processes</a></li>
@@ -316,6 +316,7 @@
 <p>Covers:</p>
 
 <ul>
+  <li><strong>Insert processes</strong> — process definitions that convert tabular (Excel) rows into database records in a single step</li>
   <li><strong>Translate processes</strong> — process definitions that convert tabular (Excel) rows into JSON process and pilot files</li>
   <li><strong>Manage processes</strong> — process definitions that insert JSON-converted data into the database</li>
   <li><strong>Process registration order</strong> — which root processes and process IDs must be present before user-data import can run</li>
@@ -323,7 +324,7 @@
 
 <h3 id="user-data">User data</h3>
 
-<p>Step-by-step guide for adding your own tabular (Excel) data to the database using the registered translate-and-manage processes from the previous step.</p>
+<p>Guide for adding your own tabular (Excel) data to the database.</p>
 
 <ul>
   <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_core_docs/user_data/">xspatula_core_docs/user_data</a></li>
@@ -333,72 +334,89 @@
 
 <ul>
   <li><strong>Excel file layout</strong> — column conventions required for the translate step to parse correctly</li>
+  <li><strong>Insert</strong> — convert tabular (Excel) rows into database records in a single step</li>
   <li><strong>Translate</strong> — converting Excel rows to JSON process files and pilot files</li>
   <li><strong>Manage</strong> — inserting the converted data into the database via the registered process catalogue</li>
   <li><strong>Verification</strong> — querying the database to confirm the imported records</li>
+</ul>
+
+<h3 id="auditing">Auditing</h3>
+
+<p>Include a comprehensive audit system with your Xspatula database to keep track of when and by whom a record was added, changed, or removed.</p>
+
+<ul>
+  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_core_docs/auditing/">xspatula_core_docs/auditing</a></li>
+</ul>
+
+<p>Covers:</p>
+
+<ul>
+  <li><strong>Audit tables</strong> — how record-level history (who, when, what changed) is stored alongside the operational data</li>
+  <li><strong>Enabling auditing</strong> — turning on audit tracking for a schema or table</li>
+  <li><strong>Querying history</strong> — retrieving the change history for a given record</li>
+</ul>
+
+<h3 id="community">Community</h3>
+
+<p>Add manually inspected organisations and users to your Xspatula project.</p>
+
+<ul>
+  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_core_docs/community/">xspatula_core_docs/community</a></li>
+</ul>
+
+<p>Covers:</p>
+
+<ul>
+  <li><strong>Organisations and users</strong> — registering organisations and the users that belong to them</li>
+  <li><strong>Password handling</strong> — hash-crypted passwords, automatically emailed to new users</li>
+  <li><strong>User categories</strong> — assigning graduated PostgreSQL privileges to new users</li>
+</ul>
+
+<h3 id="building">Building</h3>
+
+<p>Guide to building your own Xspatula framework project from scratch.</p>
+
+<ul>
+  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_core_docs/building/">xspatula_core_docs/building</a></li>
+</ul>
+
+<p>Covers:</p>
+
+<ul>
+  <li><strong>Notebooks</strong> — adjusting the Jupyter notebook interface for your project</li>
+  <li><strong>Database</strong> — setting up the database for a new project</li>
+  <li><strong>Users and auditing</strong> — adding users and enabling audit tracking</li>
+  <li><strong>Custom processes</strong> — adding your own processes to the framework</li>
 </ul>
 
 <hr />
 
 <h2 id="xspatula_lucas">xspatula_lucas</h2>
 
-<p>An open excerpt of the private <code class="language-plaintext highlighter-rouge">xspatula_ai4sh</code> project, containing only the publicly releasable LUCAS 2009 soil survey records. Uses the <code class="language-plaintext highlighter-rouge">xspatula_core</code> framework to define, populate, and import this data into a soil observation database built for the EU Horizon-funded <a href="https://ai4soilhealth.eu">AI4SoilHealth</a> project.</p>
+<p>An open excerpt of the private <code class="language-plaintext highlighter-rouge">xspatula_ai4sh</code> project, containing only the publicly releasable LUCAS 2009 soil survey records. Builds on the <code class="language-plaintext highlighter-rouge">xspatula_core</code> framework to seed, explore, and model a soil observation database for the EU Horizon-funded <a href="https://ai4soilhealth.eu">AI4SoilHealth</a> project.</p>
 
 <ul>
-  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_lucas_docs">xspatula.github.io/xspatula_lucas_docs</a></li>
+  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/">xspatula.github.io/xspatula_lucas_docs/lucas_2009</a></li>
   <li><strong>Source</strong>: <a href="https://github.com/xspatula/xspatula_lucas">github.com/xspatula/xspatula_lucas</a></li>
 </ul>
 
-<h3 id="setup-lucas-db">Setup LUCAS DB</h3>
+<p>The <code class="language-plaintext highlighter-rouge">lucas_2009</code> documentation covers a two-section pipeline: seeding the database, then exploring and modelling the seeded data.</p>
 
-<p>Defines and creates the LUCAS PostgreSQL database structure.</p>
+<h3 id="section-1-seeding">Section 1: Seeding</h3>
 
 <ul>
-  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_lucas_docs/setup_db/">xspatula_lucas_docs/setup_db</a></li>
+  <li><a href="https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/prepare_data/">Prepare data</a> — download the LUCAS 2009 data and prepare it for import</li>
+  <li><a href="https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/insert_utility/">Insert utility data</a> — insert the utility catalogues into the database</li>
+  <li><a href="https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/insert_dataset_meta/">Insert dataset metadata</a> — insert the LUCAS dataset metadata</li>
+  <li><a href="https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/load_lucas_2009/">Load LUCAS 2009 data</a> — load the LUCAS soil observation records into the database</li>
 </ul>
 
-<p>Covers:</p>
+<h3 id="section-2-modelling">Section 2: Modelling</h3>
 
 <ul>
-  <li><strong>Schemas</strong> — utility, community, process, observation_utility, observation, and landscape, and their utility sub-schemas</li>
-  <li><strong>Tables</strong> — all reference catalogues, entity tables, and observation tables with foreign key dependencies</li>
-  <li><strong>Execution order</strong> — the pilot file ordering required to satisfy foreign key constraints at creation time</li>
-</ul>
-
-<h3 id="setup-lucas-processes">Setup LUCAS Processes</h3>
-
-<p>Registers the LUCAS process catalogue in the database so the framework can dispatch calls by <code class="language-plaintext highlighter-rouge">root_process_id</code> and <code class="language-plaintext highlighter-rouge">process_id</code>.</p>
-
-<ul>
-  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_lucas_docs/setup_process/">xspatula_lucas_docs/setup_process</a></li>
-</ul>
-
-<p>Covers:</p>
-
-<ul>
-  <li><strong>Root processes</strong> — <code class="language-plaintext highlighter-rouge">manage_table_data</code> and <code class="language-plaintext highlighter-rouge">translate_data</code> process families</li>
-  <li><strong>Translate</strong> — processes for converting tabular data to JSON process files</li>
-  <li><strong>Community, utility, observation utility, observation</strong> — domain-specific process registrations</li>
-</ul>
-
-<h3 id="import-lucas-data">Import LUCAS Data</h3>
-
-<p>Step-by-step guide to importing the LUCAS 2009 soil observation data into a running database using the two-step translate-then-manage pattern.</p>
-
-<ul>
-  <li><strong>Documentation</strong>: <a href="https://xspatula.github.io/xspatula_lucas_docs/import_data/">xspatula_lucas_docs/import_data</a></li>
-</ul>
-
-<p>Covers:</p>
-
-<ul>
-  <li><strong>Tabular source data</strong> — Excel file layout and column conventions for all catalogue and observation tables</li>
-  <li><strong>JSON data structure</strong> — how the translate step converts Excel rows to JSON process files and pilot files</li>
-  <li><strong>Import utility data</strong> — translating the full set of observation utility catalogues (quantities, units, methods, providers, provisions, and more)</li>
-  <li><strong>Manage utility data</strong> — inserting utility catalogues into the database</li>
-  <li><strong>Import observation data</strong> — translating dataset metadata: data sources, persons, datasets, campaigns, and sampling logs</li>
-  <li><strong>Manage observation data</strong> — inserting dataset metadata into the database</li>
-  <li><strong>Foreign key handling</strong> — dependency trees, correct insertion order, and error recovery</li>
+  <li><a href="https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/machine_learning/explore_select_data/">Explore and select data</a> — explore the seeded data and select the subset to model</li>
+  <li><a href="https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/machine_learning/ml_preprocess/">Preprocess data</a> — prepare the selected data for machine learning</li>
+  <li><a href="https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/machine_learning/ml_model/">Model</a> — train and evaluate machine learning models on the LUCAS soil data</li>
 </ul>
 
 <hr />
