@@ -14,10 +14,10 @@ The core Xspatula framework. Defines the JSON-driven process execution engine, P
 
 ### What it covers
 
-- **Scheme files** — top-level configuration defining which processes belong to a project
-- **Job files** — ordered list of processes to run in a session
-- **Pilot files** — parameter sets that drive individual processes
-- **Process files** — atomic definitions of what a process does and what database tables it touches
+- **Scheme files** — top-level configuration defining user and project path
+- **Job files** — points to either a pilot file or contains a list of processes to run in a session
+- **Pilot files** — list of processes to run in a session
+- **Process files** — atomic definitions of process with all required arguments
 - **Database security** — five user categories (`user_cat_1` through `user_cat_5`) with graduated PostgreSQL privileges
 
 ### Setup processes
@@ -88,7 +88,7 @@ Covers:
 
 ## xspatula_lucas
 
-An open excerpt of the private `xspatula_ai4sh` project, containing only the publicly releasable LUCAS 2009 soil survey records. Builds on the `xspatula_core` framework to seed, explore, and model a soil observation database for the EU Horizon-funded [AI4SoilHealth](https://ai4soilhealth.eu) project.
+An open excerpt of the private `xspatula_ai4sh` project, containing only the publicly released LUCAS 2009 soil survey records. Builds on the `xspatula_core` framework to seed, explore, and model a soil observation database for the EU Horizon-funded [AI4SoilHealth](https://ai4soilhealth.eu) project.
 
 - **Documentation**: [xspatula.github.io/xspatula_lucas_docs/lucas_2009](https://xspatula.github.io/xspatula_lucas_docs/lucas_2009/)
 - **Source**: [github.com/xspatula/xspatula_lucas](https://github.com/xspatula/xspatula_lucas)
